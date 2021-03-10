@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+#middle{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+#mleft, #mcenter, #mright {
+    height: 100%;
+    margin: 0; 
+    display: inline-block
+}
+#top {
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(328deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+#mleft {
+    width: 15%;
+    background: rgba(63,94,251,1);
+}
+#mcenter{
+    width: 70%;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+#mright{
+    width: 15%;
+    background: rgb(160, 44, 68); 
+}
+#bottom{
+    height: 20%;
+    background: rgb(219, 14, 76);
+}
