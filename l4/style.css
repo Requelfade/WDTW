@@ -1,0 +1,106 @@
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width: 639px){
+
+
+
+#menu{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background-color: #252a3a;
+    font-size: 16px;
+    color: white;
+}
+#compose {
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 16px;
+    background-color: #1B98F8;
+}
+
+#msg {
+    width: 100vw;
+    height: 100vh;
+}
+
+#msg > * {
+    padding: 14px 16px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+#msg:nth-child(1){
+    background-color: #eee;
+}
+
+#msg:nth-child(2) #msg:nth-child(3) {
+    border-left: 6px #1B98F8;
+}
+
+.name-surname{
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 16px;
+    color: black;
+}
+
+.preview {
+    font-size: 13px;
+    color: black;
+    margin: 7px 0;
+}
+
+.mail {
+    width: auto;
+    height: auto;
+}
+
+.title {
+    font-size: 32px;
+    color: black;
+}
+
+.info-under-title {
+    font-size: 16px;
+    color: black;
+
+}
+
+.from {
+    color: #1b98f8;
+}
+
+.timestamp {
+    color: #999;
+}
+
+.content {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.reply .move .forward {
+    font-size: 16px;
+    color: #666;
+    padding: 6px 26px;
+}
+
+}
