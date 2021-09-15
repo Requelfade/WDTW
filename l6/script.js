@@ -1,14 +1,21 @@
-window.onload = function(){
-
-document.querySelector("#slider").addEventListener('click', () => {
-    var main = document.querySelector(".rotor");
-    var left = document.querySelector(".left-anim");
-    var right = document.querySelector(".right-anim");
-
-    main.style.animationIterationCount = Number(main.style.animationIterationCount) + 1;
-    left.style.animationIterationCount = Number(left.style.animationIterationCount) + 1
-    right.style.animationIterationCount = Number(right.style.animationIterationCount) + 1;
-    
-}
-)
+function slide(){
+    var stickers = document.getElementsByClassName("sticker");
+    for (let s of stickers)
+    {
+        s.classList.remove("animation");
+        void s.offsetWidth;
+        s.style.setProperty("--order", s.style.getPropertyValue("--order") * -1);
+        s.classList.add("animation");
+    }
+    var but = document.getElementById("slider");
+    if (but.style.getPropertyValue("--isright") == 0)
+    {
+        but.innerHTML = "Slide to the right ->";
+        but.style.setProperty("--isright", 1);
+    }
+    else 
+    {
+        but.innerHTML = "<- Slide to the left";
+        but.style.setProperty("--isright", 0);
+    }
 }

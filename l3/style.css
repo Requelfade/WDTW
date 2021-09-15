@@ -12,6 +12,8 @@ body {
     background-image: url("layer51/tlo.png");
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
     font-family: Arial;
     font-size: 13px;
     
@@ -19,7 +21,8 @@ body {
 
 #wrapper {
     width: 460px;
-    align-self: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #wrapper > * {
@@ -32,6 +35,19 @@ body {
     width: 440px;
     background: rgb(255,255,255);
     height: 440px;
+}
+
+#logo{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#logo span{
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
 }
 
 .image {
@@ -52,8 +68,16 @@ body {
     font: arial;
     text-decoration: none;
     color: #cbd6df;
+    text-align: center;
 }
 
 .dotted-underline {
     border-bottom: 1px dotted white;
+}
+#mail{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }

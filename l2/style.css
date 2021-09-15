@@ -44,9 +44,14 @@ body{
     height: 25%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .circle{
+    display: flex;
     background-color: rgb(212, 69, 137);
+    color: white;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -68,4 +73,28 @@ body{
     color: #eee;
     padding: 40px;
     margin-bottom: 0;
+}
+#content3{
+    width: 100%;
+}
+#features{
+    display: flex;
+}
+.feature{
+    width: 20%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.feature ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+.feature ul li {
+    margin-bottom: 5px;
+}
+.feature a{
+    text-decoration: none;
+    color: rgb(13, 157, 214);
 }
