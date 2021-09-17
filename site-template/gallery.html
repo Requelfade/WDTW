@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selfy | Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="navbar">
+            <div id="logo">
+            </div>
+            <div id="navbuttons" class="normalbuttons">
+                <div class="navbut">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navbut active">
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="navbut">
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="navbut">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="navbut">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="squeezedbuttons">
+                <select onchange="location = this.value;">
+                    <option value="index.html">Home</option>
+                    <option value="gallery.html">Gallery</option>
+                    <option value="blog.html">Blog</option>
+                    <option value="about.html">About</option>
+                    <option value="contact.html">Contact</option>
+                </select>
+            </div>
+        </div>
+        <div id="main">
+            <div id="imggallery">
+                <div class="img" onclick="enablemodal(2)">
+                    <img src="images/mock2.jpg">
+                </div>
+                <div class="img" onclick="enablemodal(3)">
+                    <img src="images/mock3.jpg">
+                </div>
+                <div class="img" onclick="enablemodal(4)">
+                    <img src="images/mock4.jpg">
+                </div>
+                <div class="img" onclick="enablemodal(5)">
+                    <img src="images/mock5.jpg">
+                </div>
+                <div class="img" onclick="enablemodal(6)">
+                    <img src="images/mock6.jpg">
+                </div>
+
+            </div>
+        </div>
+        
+        <hr>
+        <div id="footer">
+            <div class="foot left">Selfy</div>
+            <div class="foot right">
+                <a href="#"><img src="images/icon-facebook@2x.png"></a>
+                <a href="#"><img src="images/icon-linkedin@2x.png"></a>
+                <a href="#"><img src="images/icon-twitter@2x.png"></a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" style="display: none" onclick="disablemodal()">
+        <img id="modalimg" src="">
+    </div>
+</body>
+</html>

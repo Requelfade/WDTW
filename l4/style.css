@@ -84,10 +84,12 @@ body {
 #msg {
     grid-area: msg;
     overflow: scroll;
+    border-right: #ccc 1px solid;
 }
 
 .msg-l {
     padding: 14px 16px;
+    border-bottom: #ccc 1px solid;   
 }
 
 .avatar{
@@ -141,12 +143,6 @@ body {
     height: auto;
 }
 
-.info-under-title {
-    font-size: 16px;
-    color: black;
-
-}
-
 .from {
     color: #1b98f8;
 }
@@ -168,4 +164,46 @@ body {
 
 #msg-content{
     grid-area: msg-content;
+}
+
+#mail-header{
+    width: 100%;
+    border-bottom: #ccc 1px solid;
+    overflow: auto;
+}
+
+#mail-title {
+    display: inline-block;
+    margin: 15px;
+    width: 50%;
+}
+
+#mail-title > b {
+    font-size: 32px;
+    color: black;
+}
+
+#mail-title > p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#mail-buttons{
+    float: right;
+    margin: 15px;
+    display: inline-block;
+}
+
+.mail-bttn {
+    font-size: 16px;
+    color: #666;
+    border: #ccc 1px solid;
+    border-radius: 14px;
+    padding: 6px 26px;
+}
+
+.content {
+    text-align: justify;
+    padding: 15px;
+    margin: 0;
 }
